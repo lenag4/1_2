@@ -563,7 +563,15 @@
       </div>
 
     </div>
-  
+      <div id="bottom-alert" class="alert alert-warning alert-dismissible fade"
+    style="position: fixed; z-index: 10; bottom: 30px; right: 30px; left: auto; max-width: 360px;">Скидка на первый заказ 10%<button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        document.querySelector('#bottom-alert').classList.add('show');
+      }, 100);
+    });
+  </script>
     
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
